@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UDP</title>
+
+    <link rel="icon" type="image/jpeg" href="../img/Principal.jpg">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Tipografía Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f6fc;
+        }
+
+        .navbar {
+            background-color: #dbeafe !important;
+        }
+
+        .navbar-brand {
+            color: #0d47a1;
+            font-weight: 700;
+        }
+
+        .nav-link {
+            color: #174ea6;
+        }
+
+        .nav-link:hover {
+            color: #0d6efd;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f6fc;
+            color: #172b4d;
+        }
+
+        h1 {
+            color: #0d6efd;
+            font-size: 42px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .contenido {
+            background-color: white;
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+        }
+
+        .imagen-tcp {
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+        }
+
+        .explicacion {
+            background-color: #0d6efd;
+            color: white;
+            border-radius: 15px;
+            padding: 18px;
+            margin-top: 20px;
+        }
+
+        .explicacion p {
+            margin: 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+            <img src="../img/Principal.jpg" alt="Logotipo" width="100">
+
+            <a class="navbar-brand" href="index.html">
+                Navegación
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pags/tcp.html">
+                            TCP
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            UDP
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Comparación
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Diferencias UDP
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Diferencias TCP
+                                </a>
+                            </li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Integrantes
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5 mb-5">
+        <h1 class="display-2 text-center">Protocolo UDP</h1>
+        <br>
+
+        <div class="contenido">
+            <div class="row align-items-center">
+
+                <!-- Imagen -->
+                <div class="col-md-6 text-center mt-4 mt-md-0">
+
+                    <img src="../img/Proceso de Transmisión UDP.png" alt="Representación del protocolo UDP"
+                        class="img-fluid imagen-udp">
+
+                </div>
+
+                <!-- Texto -->
+                <div class="col-md-6 text-start">
+
+                    <h1>¿Qué es UDP?</h1>
+                    <p>
+                        El UDP (User Datagram Protocol) es un protocolo
+                        sin conexión de la familia de protocolos de Internet
+                        que funciona en la capa de transporte y fue
+                        especificado en 1980 en la RFC 768.
+
+                        El protocolo UDP se utiliza para transmitir
+                        datagramas de forma rápida en redes IP y funciona
+                        como una alternativa de menor sobrecarga al
+                        protocolo TCP.
+                    </p>
+
+                    <p>
+                        Mientras que la transmisión en el protocolo TCP
+                        requiere establecer una conexión mediante el
+                        proceso de tres pasos (conocido como Three-Way
+                        Handshake), el protocolo UDP no utiliza este
+                        procedimiento, lo que permite comenzar a transmitir
+                        datos sin establecer previamente una conexión.
+                    </p>
+
+                    <p>
+                        UDP no garantiza que los datos lleguen, ni que lleguen ordenados. Tampoco significa que siempre
+                        sea más rápido que TCP; su ventaja es que tiene menos mecanismos de control y menor sobrecarga.
+                    </p>
+
+
+                </div>
+
+            </div>
+            <br>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <h1 class="text-center">Para que sirve DNS</h1>
+                <br>
+                <br>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+
+                <div class="carousel-inner">
+
+
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="../img/Videojuegos.jpg" class="d-block w-100" alt="Videojuegos en línea">
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4 style="color: #146fde;">Videojuegos</h4>
+                            <p style="color: #ffffff;">Permite transmitir rápidamente los movimientos
+                                y acciones de los jugadores en juegos en línea.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="../img/Videollamadas.jpg" class="d-block w-100" alt="Videollamada">
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4 style="color: #146fde;">Videollamadas</h4>
+                            <p style="color: #ffffff;">Facilita la transmisión de audio y video en tiempo real.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="../img/Streaming.jpg" class="d-block w-100" alt="Transmisión de contenido multimedia">
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4 style="color: #146fde;">Streaming</h4>
+                            <p style="color: #ffffff;">Se utiliza en determinados sistemas de transmisión de audio y
+                                video.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="../img/DNS.jpg" class="d-block w-100" alt="Videollamada">
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4 style="color: #e1e10c;">DNS</h4>
+                            <p style="color: #ffffff;">Permite realizar consultas para encontrar la dirección IP de un
+                                dominio.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="../img/Transmicion en vivo.jpg" class="d-block w-100" alt="Videollamada">
+
+                        <div class="carousel-caption d-none d-md-block">
+                            <h4 style="color: #0073ff;">Transmiciones en tiempo real</h4>
+                            <p style="color: #ffffff;">UDP es útil cuando importa más la rapidez que retransmitir datos
+                                perdidos.dominio.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+
+                <!-- Botón siguiente -->
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    </div>
+</body>
